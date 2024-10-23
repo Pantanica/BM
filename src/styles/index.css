@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: url('src/assets/fondo nuevo.jpeg') center/cover fixed; /* Cambia la ruta por la nueva imagen de fondo */
+  background-color: rgba(0, 0, 0, 0.8); 
+}
+
+.form-container {
+  z-index: 1;
+  width: 100%;
+  max-width: 500px;
+  margin: 50px auto;
+  margin-top: 10px;
+  background-color: #000000; /* Fondo negro */
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* Sombra clara */
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #ffffff; /* Texto blanco */
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #fff; /* Borde blanco */
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #000000; /* Fondo negro */
+  color: #ffffff; /* Texto blanco */
+}
+
+.label {
+  position: absolute;
+  top: 10%;
+  left: 10px;
+  transform: translateY(-100%);
+  color: #ffffff; /* Texto blanco */
+  font-size: 14px;
+  background-color: #000000; /* Fondo negro para la etiqueta */
+  transition: transform 0.3s ease;
+}
+
+/* Botón de "Crear Cuenta" con efecto de iluminación */
+.signup-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #000000; /* Fondo negro */
+  border: none;
+  border-radius: 12px; /* Ajuste de borde redondeado */
+  color: #ffffff; /* Texto blanco */
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 0px;
+  position: relative;
+  z-index: 0;
+  outline: none;
+}
+
+.signup-button:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 12px;
+}
+
+.signup-button:hover:before {
+  opacity: 1;
+}
+
+.signup-button:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #000000; /* Fondo negro */
+  left: 0;
+  top: 0;
+  border-radius: 12px;
+  z-index: -1;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
+.signup-button:hover {
+  transform: scale(1.05); /* Aumenta ligeramente el tamaño del botón al pasar el mouse */
+}
+
+.footer, .login-link, .terms-link {
+  color: #ffffff; /* Texto blanco */
+}
+
+.terms {
+  margin-top: 10px;
+  color: #ffffff; /* Texto blanco */
+  font-size: 14px;
+}
+
+h1 {
+  text-align: center;
+  color: #ffffff; /* Texto blanco */
+}
+
+.books-container {
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.books-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.book-detail-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.book-detail-container img {
+  max-width: 200px;
+  height: auto;
+}
+
+.book-detail-container .book-info {
+  flex: 1;
+}
+
+.book-detail-container .actions {
+  display: flex;
+  gap: 10px;
+}
+
+/* Media Query para pantallas más pequeñas */
+@media screen and (max-width: 600px) {
+  .form-container {
+    width: 90%;
+    margin: 20px auto;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .form-container {
+    padding: 20px;
+  }
+}

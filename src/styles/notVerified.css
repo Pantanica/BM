@@ -1,0 +1,75 @@
+.body {
+    background-color: black;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%; 
+    max-width: 400px;
+}
+
+.h1 {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    text-align: center;
+    font-size: 2em; 
+    margin: 0 10px; 
+}
+
+.boton {
+    background-color: rgb(216, 112, 147);
+    font-family: Arial, sans-serif;
+    border: none;
+    color: white;
+    border-radius: 10px; 
+    min-height: 40px;
+    min-width: 150px;
+    padding: 15px;
+    font-size: large;
+    margin: 15px auto; 
+    display: block; 
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: #000000;
+}
+
+.footer {
+    position: fixed;
+    font-family: Arial, sans-serif;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px; 
+}
+
+@media screen and (max-width: 768px) {
+    .center {
+        width: 90%; 
+    }
+
+    .h1 {
+        font-size: 1.5em; 
+    }
+
+    .boton {
+        min-width: 120px; 
+        font-size: medium; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .h1 {
+        font-size: 1.2em; 
+    }
+
+    .boton {
+        min-width: 100px; 
+        padding: 10px; 
+    }
+}

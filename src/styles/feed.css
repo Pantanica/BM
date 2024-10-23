@@ -1,0 +1,183 @@
+body {
+    background-color: white;
+    margin: 0;
+}
+
+.divHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 15%;
+    background-color: black;
+    padding: 0 20px;
+}
+
+.container-inputSearch {
+    position: relative;
+    flex-grow: 1;
+}
+
+.inputSearch {
+    width: 100%; 
+    max-width: 400px;
+    height: 40px;
+    border-radius: 9999px;
+    border: solid 1px black;
+    outline: none;
+    background-image: url("src/assets/magnifying-glass-1976105_1280.webp");
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 15px;
+    padding-left: 40px;
+    margin-top: 10px;
+}
+
+.imagenLogo {
+    width: 90px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.ProfilePic {
+    border-radius: 50%;
+    background-color: #ffffff;
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: black;
+    padding: 0 20px;
+    position: relative; 
+    z-index: 1000; 
+    overflow: hidden; 
+}
+
+.books-container {
+    margin-top: 20px; 
+    padding: 20px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .books-container {
+        margin-top: 80px; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .books-container {
+        margin-top: 60px; 
+    }
+}
+
+
+.logo-container,
+.profilepic-container {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.searchbar-container {
+    flex-grow: 1;
+    margin-right: 60px;
+}
+
+.pageLink {
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 25px;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+    transition: transform 0.2s;
+}
+
+.pageLink:hover {
+    transform: scale(1.1);
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+    .divHeader {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .inputSearch {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .imagenLogo {
+        width: 60px;
+        margin-right: 10px;
+    }
+
+    .ProfilePic {
+        width: 50px;
+        height: 50px;
+        margin-right: 0;
+    }
+
+    .header-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .searchbar-container {
+        margin-right: 0;
+    }
+
+    .pageLink {
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .inputSearch {
+        width: 100%;
+        padding-left: 30px;
+        font-size: 14px;
+    }
+
+    .ProfilePic {
+        width: 40px;
+        height: 40px;
+    }
+
+    .imagenLogo {
+        width: 50px;
+    }
+
+    .pageLink {
+        margin-top: 5px;
+    }
+}
+
+.footerFeed {
+    position: fixed;
+    font-family: Arial, sans-serif;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: #ffffff;
+    text-align: center;
+}

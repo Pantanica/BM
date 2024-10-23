@@ -1,0 +1,75 @@
+.books-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
+}
+.book-feed-container {
+    padding: 20px;
+    box-shadow: 0 0 10px black;
+}
+
+
+.book-info {
+    font-family: 'Times New Roman', Times, serif, Helvetica, sans-serif;
+    margin-top: 10px;
+    border: 1px solid white;
+    padding: 10px;
+}
+
+
+.book-cover-container {
+    width: 100%; 
+    height: auto; 
+    overflow: hidden;
+}
+
+
+.book-cover-container img {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover;
+}
+
+
+.boton-prestamo {
+    background-color: rgb(216, 112, 147);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.boton-prestamo:hover {
+    background-color: black;
+}
+
+@media screen and (max-width: 1200px) {
+    .books-grid {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .books-grid {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .books-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .book-cover-container {
+        width: 100%;
+        height: auto; 
+    }
+
+    .boton-prestamo {
+        font-size: 14px; 
+        padding: 8px 16px; 
+    }
+}

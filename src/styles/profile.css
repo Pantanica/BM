@@ -1,0 +1,370 @@
+body {
+    background-color: #ffffff;
+    margin: 0;
+}
+
+.divHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 15%;
+    background-color: #000000;
+    padding: 0 20px;
+}
+
+.container-inputSearch {
+    position: relative;
+    flex-grow: 1; 
+}
+
+.inputSearch {
+    width: 100%; 
+    max-width: 400px;
+    height: 40px;
+    border-radius: 9999px;
+    border: solid 1px #000000;
+    outline: none;
+    background-image: url("src/assets/magnifying-glass-1976105_1280.webp");
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 15px;
+    padding-left: 40px;
+    margin-top: 10px;
+}
+
+.imagenLogo {
+    width: 90px;
+    height: auto;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.ProfilePic {
+    border-radius: 50%;
+    background-color: #ffffff;
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: #000000;
+    padding: 0 20px;
+}
+
+.logo-container,
+.profilepic-container {
+    margin: 0 10px;
+}
+
+.searchbar-container {
+    flex-grow: 1;
+    margin-right: 60px;
+}
+
+.pageLink {
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 25px;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: 'Times New Roman', Times, serif, Helvetica, sans-serif;
+    text-decoration: underline;
+}
+
+
+@media screen and (max-width: 800px) {
+    .header-container {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 20px;
+    }
+
+    .searchbar-container {
+        margin: 10px 0; 
+    }
+
+    .inputSearch {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .pageLink {
+        margin: 10px 0; 
+    }
+
+    .ProfilePic {
+        width: 50px;
+        height: 50px;
+        margin-right: 0;
+    }
+
+    .imagenLogo {
+        width: 70px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .inputSearch {
+        padding-left: 30px;
+        font-size: 14px;
+    }
+
+    .ProfilePic {
+        width: 40px;
+        height: 40px;
+    }
+
+    .imagenLogo {
+        width: 60px;
+    }
+
+    .header-container {
+        padding: 5px 10px;
+    }
+}
+
+.footerFeed {
+    position: fixed;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+.profile-info {
+    width: 150%; 
+    max-width: 600px;
+    height: auto;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin: 10px auto;
+    background-color: #ffffff;
+    border: 3px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.Profile-Pic {
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+.profilepic-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-name {
+    font-family: 'Times New Roman', Times, serif, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    font-size: 24px; 
+}
+
+.upload-button {
+    background-color: rgb(216, 112, 147);
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 14px; 
+    cursor: pointer;
+    border-radius: 2px;
+    margin: 10px auto;
+    border: 1px solid black;
+}
+
+.upload-button:hover {
+    background-color: #000000;
+}
+
+
+@media screen and (max-width: 800px) {
+    .profile-info {
+        width: 80%; 
+        max-width: 500px; 
+    }
+
+    .Profile-Pic {
+        width: 120px; 
+        height: 120px; 
+    }
+
+    .profile-name {
+        font-size: 20px; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .profile-info {
+        width: 95%; 
+        max-width: 400px; 
+    }
+
+    .Profile-Pic {
+        width: 100px; 
+        height: 100px; 
+    }
+
+    .profile-name {
+        font-size: 18px; 
+    }
+}
+
+
+.books-container {
+    width: 70%; 
+    max-width: 1200px; 
+    margin: 0 auto 20px; 
+    height: auto;
+}
+
+.books-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.form-container {
+    width: 80%; 
+    max-width: 1200px;
+    background-color: #ffffff;
+    font-family: 'Times New Roman', Times, serif, Helvetica, sans-serif;
+    margin: 0 auto;
+}
+
+.books-container h1 {
+    background-color: #ffffff;
+    text-align: left; 
+}
+
+.book-detail-container {
+    display: flex;
+    flex-direction: row; 
+    gap: 20px;
+    padding: 5%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    align-items: center; 
+}
+
+.book-cover-container {
+    width: 40%; 
+    height: auto;
+    overflow: hidden;
+}
+
+.book-cover-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.book-info {
+    flex: 1; 
+    text-align: left;
+}
+
+.actions {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px;
+    justify-content: center; 
+    cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+    .book-detail-container {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .book-cover-container {
+        width: 100%; 
+    }
+
+    .book-info {
+        text-align: center; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .actions {
+        gap: 5px; 
+    }
+}
+
+.fileName {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif, Helvetica, sans-serif;
+    margin: 2px;
+}
+
+.submit-button {
+    padding: 5px;
+    margin: 5px;
+    text-decoration: none;
+    font-size: 14px; 
+    cursor: pointer;
+    background-color: #f7f3ec;
+    border: none;
+    color: black;
+    border-radius: 2px;
+    border: 1px solid black;
+}
+
+.book-container {
+    background-color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 10px;
+    justify-content: center; 
+    border-radius: 2px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.tag-entry {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 5px;
+    flex: 1 0 30%; 
+    text-align: center; 
+}
+
+
+.empty-list-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 0%;
+    text-align: center;
+}
+
+.empty-list-container img {
+    width: 80%; 
+    max-width: 450px;
+    opacity: 0.6;
+}
+
+.empty-list-title {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif, Helvetica, sans-serif;
+}

@@ -1,0 +1,203 @@
+body {
+  background: white;
+  margin: 0;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  padding-bottom: 60px;
+}
+
+.header {
+  background-color: black;
+  color: palevioletred;
+  text-align: center;
+  padding: 7px 0;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  background-color: black;
+  padding: 0 20px; 
+}
+
+.title-container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  margin-left:85px;
+}
+
+.pageLink {
+  width: 120px;
+  height: 45px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: palevioletred;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 12px;
+}
+
+/* Agregar media queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .header-container {
+      flex-direction: column;
+      justify-content: center;
+      height: auto;
+      padding: 10px;
+  }
+
+  .title-container {
+      margin-left: 0;
+      margin-top: 10px;
+  }
+
+  .pageLink {
+      width: 100px;
+      height: 40px;
+  }
+
+  .body-container {
+      padding-bottom: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pageLink {
+      width: 90px;
+      height: 35px;
+      font-size: 12px;
+  }
+
+  .info-container {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .info p {
+      margin: 10px;
+  }
+}
+
+.pageLink:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.body-container {
+  padding-bottom: 120px;
+}
+
+.elemento {
+  margin-bottom: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para imágenes responsivas */
+.elemento img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.info-container {
+  display: flex;
+  align-items: center;
+}
+
+.info-container .info {
+  flex: 1; /* Ocupa todo el espacio disponible */
+}
+
+.info-container .book-details {
+  display: flex;
+  justify-content: space-between; /* Distribuye los elementos horizontalmente */
+}
+
+.info-container .book-details p {
+  margin: 5px 0;
+}
+
+.info-container .book-status {
+  margin-left: auto; /* Colocar el estado al final de la fila */
+}
+
+.status {
+  margin-left: 40px;
+}
+
+.info p {
+  margin: 40px 50px 10px 30px; /* Añade margen entre los párrafos */
+}
+
+.info button {
+  background-color: white; 
+  color: white; 
+  border: 1px solid gray; 
+  padding: 10px 10px; 
+  text-align: center; 
+  text-decoration: none; 
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px; 
+  transition-duration: 0.6s; 
+  cursor: pointer; 
+  transition: transform 0.2s;
+}
+
+.info button:hover {
+  background-color: #f3f1f1; 
+  transform: scale(1.05);
+}
+
+/* Para mantener el footer fijo en la parte inferior pero con mejor ajuste */
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #000;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+body {
+  padding-bottom: 60px; /* Añadir espacio al final del contenido para no tapar con el footer */
+}
+
+
+.empty-list-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.empty-list-container img {
+  width: 100%;
+  max-width: 450px;
+  opacity: 0.6;
+}

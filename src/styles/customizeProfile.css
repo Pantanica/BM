@@ -1,0 +1,136 @@
+body{
+
+    background-color: white;
+}
+
+.titulo{
+
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.tituloImagen{
+    margin-top: 5px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+.centerImage{
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background-color: white;
+}
+.container {
+    text-align: center; /* Centra el contenido horizontalmente */
+}
+.boton {
+    background-color: #faf1ea;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 5%;
+    font-size: large;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-color: black;
+    padding: 5px 10px; /* Añadimos un poco de relleno alrededor del texto */
+    display: inline-block; /* Cambiamos de block a inline-block */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.boton:hover {
+    background-color: #ffffff;
+  }
+
+  .form-container {
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-grid {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, auto);
+    gap: 10px;
+}
+
+/* Style for each tag entry */
+.tag-entry {
+    display: flex;
+    align-items: center;
+    
+}
+
+.submit-button{
+    display: block;
+    background-color: palevioletred;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 5%;
+    font-size: large;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 5px 10px; /* Añadimos un poco de relleno alrededor del texto */
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+
+}
+
+.tagText{
+
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.tagInput {
+    
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #999;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+}
+
+/* iPhone checkbox checked style */
+.tagInput:checked {
+    background-color: #000000; /* Change background color when checked */
+}
+
+/* iPhone checkbox checked indicator */
+.tagInput:checked::after {
+    content: '\2713'; /* Unicode character for checkmark */
+    font-size: 14px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.footerFeed {
+    position: fixed;
+    font-family: 'Times New Roman', Times, serif;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    text-align: center;
+  }
+
+  .submit-button:hover {
+
+    background-color: black; 
+
+  }
