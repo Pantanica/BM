@@ -12,10 +12,10 @@ const app = express();
 const port = 3000;
 
 const db = new pg.Client({
-  user: "postgres",
-  host: "localhost",
-  database: "BookmatchProd",
-  password: "Leonardosep13",
+  user: "postgres.dfwqzdzvdncfjqvqymbc",
+  host: "aws-0-us-east-1.pooler.supabase.com",
+  database: "postgres",
+  password: "Leonardosep#134",
   port: 5432,
 });
 
