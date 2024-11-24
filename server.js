@@ -289,6 +289,12 @@ app.get('/api/renderBooks', verifyToken, async (req, res) => {
 
 
 
+app.get('/', (req, res) => {
+    res.send('El backend está funcionando correctamente.');
+});
+
+
+
 
 app.delete('/api/deleteBook/:id', verifyToken, async (req, res) => {
     const userId = req.user.userId;
