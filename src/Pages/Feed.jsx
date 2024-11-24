@@ -25,7 +25,7 @@ function Feed() {
 
     async function fetchTags() {
         try {
-            const response = await fetch('/api/tags');
+            const response = await fetch('https://bm-wkpc.onrender.com/api/tags');
             if (response.ok) {
                 const tagsData = await response.json();
                 setTags(tagsData.tagsInfo);
@@ -75,7 +75,7 @@ function Feed() {
                 formData.append('idUsuario', token);
                 formData.append('tags', JSON.stringify(selectedTags));
 
-                const response = await fetch('/api/addBook', {
+                const response = await fetch('https://bm-wkpc.onrender.com/api/addBook', {
                     method: 'POST',
                     headers: {
                         'Authorization': `Bearer ${token}`,

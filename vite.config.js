@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'https://bm-wkpc.onrender.com',
+        target: 'https://bm-wkpc.onrender.com/',
         changeOrigin: true,
         secure: true,
       },

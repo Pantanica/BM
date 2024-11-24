@@ -52,7 +52,7 @@ function RegisterForm() {
             formDataToSend.append('image', selectedFile); // Use selectedFile, not formData.image
     
             console.log(formDataToSend);
-            const response = await fetch('/api/register', {
+            const response = await fetch('https://bm-wkpc.onrender.com/api/register', {
                 method: 'POST',
                 body: formDataToSend,
             });

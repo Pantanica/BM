@@ -20,7 +20,7 @@ function ProfileUserInfo() {
         try {
             const userId = localStorage.getItem("id propietario");
             console.log(userId);
-            const response = await fetch(`/api/getUserTags/${userId}`, {
+            const response = await fetch(`https://bm-wkpc.onrender.com/api/getUserTags/${userId}`, {
                 method: 'GET',
                 
             });
@@ -39,7 +39,7 @@ function ProfileUserInfo() {
         try {
             const userId = localStorage.getItem("id propietario");
             console.log(userId);
-            const response = await fetch(`/api/getUserName/${userId}`, {
+            const response = await fetch(`https://bm-wkpc.onrender.com/api/getUserName/${userId}`, {
                 method: 'GET',
                 
             });
