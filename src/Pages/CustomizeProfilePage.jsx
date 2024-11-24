@@ -46,7 +46,7 @@ function CustomizeProfilePage() {
 
                 console.log("fotaza: ");
                 console.log(profileDataToSend);
-                const postProfile = await fetch(`/api/customizeProfile/${idUsuario}`, {
+                const postProfile = await fetch(`https://bm-wkpc.onrender.com/api/customizeProfile/${idUsuario}`, {
                     method: 'POST',
                     body: profileDataToSend,
                 })

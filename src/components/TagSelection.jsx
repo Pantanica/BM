@@ -13,7 +13,7 @@ function ParentComponent({ onSubmit }) {
     
     async function fetchTags() {
         try {
-            const response = await fetch('/api/tags');
+            const response = await fetch('https://bm-wkpc.onrender.com/api/tags');
             if (response.ok) {
                 const tagsData = await response.json();
                 setTags(tagsData.tagsInfo);
